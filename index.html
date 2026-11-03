@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EarthAware | Global Warming Awareness</title>
+  <meta name="description" content="A clean educational website about global warming, its causes, impacts, and practical solutions.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header">
+    <nav class="nav container">
+      <a class="brand" href="#home"><span class="brand-mark">EA</span> EarthAware</a>
+      <button class="menu-btn" aria-label="Toggle menu">☰</button>
+      <div class="nav-links">
+        <a href="#about">About</a><a href="#causes">Causes</a><a href="#impacts">Impacts</a>
+        <a href="#solutions">Solutions</a><a href="#quiz">Quiz</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="home">
+    <section class="hero">
+      <div class="hero-overlay"></div>
+      <div class="container hero-content">
+        <p class="eyebrow">OUR PLANET. OUR RESPONSIBILITY.</p>
+        <h1>Protect the planet.<br><span>Shape the future.</span></h1>
+        <p class="hero-text">Global warming is changing our climate. Understanding the problem is the first step toward creating a safer, healthier future for everyone.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#about">Explore the issue <span>→</span></a>
+          <a class="btn btn-ghost" href="#quiz">Take the quiz</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section container">
+      <div class="section-heading">
+        <p class="eyebrow">THE BIG PICTURE</p>
+        <h2>What is global warming?</h2>
+        <p>Global warming is the long-term rise in Earth's average surface temperature, driven mainly by human activities that increase heat-trapping greenhouse gases in the atmosphere.</p>
+      </div>
+      <div class="cards three">
+        <article class="info-card"><div class="icon">🌡️</div><h3>A warming world</h3><p>Earth's climate is getting warmer, affecting weather patterns, oceans, ice, ecosystems and communities.</p></article>
+        <article class="info-card"><div class="icon">🏭</div><h3>Human influence</h3><p>Burning coal, oil and gas, land-use changes and other activities add greenhouse gases to the atmosphere.</p></article>
+        <article class="info-card"><div class="icon">🌱</div><h3>Action matters</h3><p>Cleaner energy, efficient systems, resilient communities and informed choices can reduce climate risks.</p></article>
+      </div>
+    </section>
+
+    <section id="causes" class="section alt">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">WHY IT HAPPENS</p><h2>Main causes</h2>
+          <p>Several human activities contribute to the buildup of greenhouse gases.</p>
+        </div>
+        <div class="cause-grid">
+          <article class="cause"><span>01</span><h3>Fossil fuels</h3><p>Coal, oil and natural gas release carbon dioxide when burned for electricity, heat and transport.</p></article>
+          <article class="cause"><span>02</span><h3>Deforestation</h3><p>Removing forests reduces an important natural carbon sink and can release stored carbon.</p></article>
+          <article class="cause"><span>03</span><h3>Industry</h3><p>Industrial processes can emit carbon dioxide and other greenhouse gases directly and through energy use.</p></article>
+          <article class="cause"><span>04</span><h3>Agriculture</h3><p>Farming and livestock can produce methane and nitrous oxide, both powerful greenhouse gases.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="impacts" class="section container">
+      <div class="section-heading">
+        <p class="eyebrow">WHAT CHANGES</p><h2>Impacts on our world</h2>
+        <p>Warming affects interconnected natural and human systems.</p>
+      </div>
+      <div class="impact-grid">
+        <article class="impact-card"><div class="impact-img ocean"></div><div><h3>Rising seas</h3><p>Sea-level rise threatens coastal ecosystems, infrastructure and communities.</p></div></article>
+        <article class="impact-card"><div class="impact-img heat"></div><div><h3>Extreme heat</h3><p>Hotter conditions can increase risks to health, agriculture and ecosystems.</p></div></article>
+        <article class="impact-card"><div class="impact-img ice"></div><div><h3>Melting ice</h3><p>Glaciers and ice sheets are losing mass, contributing to sea-level rise.</p></div></article>
+        <article class="impact-card"><div class="impact-img nature"></div><div><h3>Ecosystem stress</h3><p>Plants and animals may face changing habitats, seasons and food availability.</p></div></article>
+      </div>
+    </section>
+
+    <section id="solutions" class="section solution-section">
+      <div class="container solution-wrap">
+        <div class="section-heading left">
+          <p class="eyebrow">WHAT WE CAN DO</p><h2>Solutions start with action.</h2>
+          <p>There is no single solution. Progress comes from combining clean energy, efficiency, responsible land use, innovation and strong climate policies.</p>
+        </div>
+        <div class="solution-list">
+          <div><b>01</b><span><strong>Choose cleaner energy</strong><small>Support renewable electricity and reduce unnecessary energy use.</small></span></div>
+          <div><b>02</b><span><strong>Travel smarter</strong><small>Walk, cycle, use public transport or share rides when practical.</small></span></div>
+          <div><b>03</b><span><strong>Reduce waste</strong><small>Buy thoughtfully, reuse items and recycle where systems exist.</small></span></div>
+          <div><b>04</b><span><strong>Protect nature</strong><small>Support forests, wetlands and other ecosystems that store carbon.</small></span></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="quiz" class="section quiz-section">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">TEST YOUR KNOWLEDGE</p><h2>Global warming quiz</h2>
+          <p>Answer the questions and see how much you know.</p>
+        </div>
+        <div class="quiz-box">
+          <div id="quiz-progress"></div>
+          <h3 id="question"></h3>
+          <div id="answers"></div>
+          <div class="quiz-controls"><button id="next" class="btn btn-primary" disabled>Next question →</button></div>
+          <div id="result" class="result hidden"></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer><div class="container footer-inner"><strong>EarthAware</strong><span>Learn • Act • Protect</span><span>© 2026 EarthAware</span></div></footer>
+  <script src="script.js"></script>
+</body>
+</html>
